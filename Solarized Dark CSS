@@ -15,7 +15,7 @@ body {
 }
 .hierarchy-editor-toolbar-container--opened #hierarchy-editor-toolbar {
   border-color: #ff5555;
-  border-top: solid #052e32;
+  border-top: solid #93a1a1;
   background-color: #052e32;
   border-width: thin;
   white-space: nowrap;
@@ -26,13 +26,13 @@ body {
   padding-right: 15px;
 }
 #hierarchy-editor-toolbar-container #hierarchy-editor__add-to-portal .rich-text-editor {
-  border: 1px solid ;
+  border: 1px solid #93a1a1;
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px;
   margin: 5px 5px 4px;
-  background-color: #282a36;
-  color:white;
-  font-size: 14px;
+  background-color: #052e32;
+  color: white;
+  font-size: 12px;
 }
 .rem-text {
     margin-left: -5px;
@@ -60,15 +60,15 @@ body {
     overflow: hidden;
 	background-color: #052e32;
 
-    color:white;
+    color: white;
 }
 .rich-text-editor__selected-text-menu .rich-text-editor__selected-text-menu__doc-options {
     display: flex;
     padding: 0 4px;
     align-items: center;
-	background-color: #052e32;
+	background-color: #043a49;
 
-    color:white;
+    color: white;
 }
 .rich-text-editor__selected-text-menu .rich-text-editor__selected-text-menu__search {
     border-color: #c8c8c8;
@@ -76,7 +76,7 @@ body {
     border-width: thin;
 	background-color: #052e32;
 
-    color:white;
+    color: white;
 }
 .search-results #search-results__list {
     z-index: 8;
@@ -595,13 +595,13 @@ i.icon.refresh:before {
     color: white;
 }
 .rem-reference-link {
-    color: #b58900;
+    color: #d33682;
     font-weight: 500;
 }
 .bold {
     font-weight: 700;
-    color:#50fa7b ;
-}
+    color: #d33682;
+}   
 #document-hover-preview {
     background-color:#052e32;
     color: white;
@@ -701,7 +701,6 @@ i.icon.refresh:before {
     color: #ff79c6;
 }
 .rem-bullet__document{
-
     background-color: transparent;
 }
 .spacedRepetition .spaced-repetition__prompt .indented-rem .rem-bullet__document {
@@ -756,19 +755,19 @@ i.icon.search:before {
 }
 .react-contextmenu{
     color: white;
-   	background-color:#d33682;
+   	background-color:#043a49;
    	font-size:14px;
 }
 .react-contextmenu--visible #menu-divider {
-    border: none;
+    border: orange;
 }
 .ui.dropdown .menu>.item {
     border-radius: 10px;
-    color: #d33682;
+    color: #93a1a1;
 
 }
 .ui.dropdown .menu>.item:hover {
-    background-color: #d33682;
+    background-color: #b58900;
 }
 
 #document-sidebar__link   {
@@ -782,10 +781,10 @@ i.icon.search:before {
     color: #d33682;
 }
 .react-contextmenu--visible .hierarchy-editor__rem-menu {
-        color: #d33682;
+        color: #93a1a1;
     }
     .react-contextmenu--visible .hierarchy-editor__rem-menu:hover {
-        background-color: #d33682;
+        background-color: #b58900;
     }
     .ui.dropdown .menu {
         color: #d33682;
@@ -916,7 +915,7 @@ color: #d33682;
     border-radius: 10px;
 }
 #document .document-title {
-    color: white;
+    color: #b58900;
 }
 .navigation-bar  {
     background-color: #052e32;
@@ -927,7 +926,7 @@ color: #d33682;
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 5px;
-    color: #d33682;
+    color: #b58900;
     font-size: 13px;
     font-weight: 500;
     background-color: #052e32;
@@ -968,3 +967,114 @@ color: #d33682;
 .acc-capsule__menu__element--hoverable:hover {
 	background-color: #b58900;
 }
+
+    /* Trail History */
+        
+    #thinking-trail-history:hover #thinking-trail-history__container {
+        background-color: #052e32; 
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .5);
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        margin: 0px;
+    }
+    
+    #thinking-trail-history {
+        margin: 2px;
+    }
+    
+    #thinking-trail-history .thinking-trail-history__document .thinking-trail-history__document-dot {
+        background-color: var(--hover-background-c);
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 5px;
+        height: 5px;
+        margin-left: -1px;
+    }
+        
+    #thinking-trail-history .thinking-trail-history__document .thinking-trail-history__document-dot:hover,
+    #thinking-trail-history .thinking-trail-history__document-dot--active {
+        background-color: gray!important;
+        border: 1px solid gray!important;
+        border-radius: 5px!important;
+        width: 7px!important;
+        height: 7px!important;
+        box-shadow: none!important;
+        margin-left: -2px!important;
+    }
+       
+    #thinking-trail-history .thinking-trail-history__document .thinking-trail-history__children-bar {
+        color: gray;
+    }
+    
+    #thinking-trail-history #thinking-trail-history__container {
+        padding-top: 25px;
+    }
+    
+    #thinking-trail-history .thinking-trail-history__document-height-offset {
+        padding-top: 0.9px;
+    }
+    
+    #thinking-trail-history .thinking-trail-history__document .thinking-trail-history__document-height-offset {    
+        background-color: gray;
+    }
+        
+    #thinking-trail-history .thinking-trail-history__document .thinking-trail-history__document-dot__preview {
+        padding: 2px 7px 0px 5px;
+    }    
+    
+    #thinking-trail-history__document-list .thinking-trail-history__document-dot__preview:hover {
+        color: var(--main-background-c);         
+    }
+    
+    #thinking-trail-history #thinking-trail-history__document-list .thinking-trail-history__document-dot__preview {
+        padding: 1px 5px;
+        color: var(--font-dark-c);
+    }
+    
+    #thinking-trail-history #thinking-trail-history__document-list .thinking-trail-history__document-dot__preview:hover {
+        background-color: var(--secondary-background-c);
+        color: var(--font-c);
+    }
+    
+        /* Bullets */
+
+    .rem-bullet, .rem-bullet--in-list {
+        width: 0.4em;
+        height: 0.4em;
+        border-radius: 100%;
+        background-color: #b58900;
+        display: inline-block;
+        border: 5px solid #583400; 
+        opacity: 1;
+        box-shadow: 0px 0px 0px 1.25px #583400;
+    }
+        
+    .rem-bullet__icon.rem-bullet--hidden-children { 
+        background-color: #444;
+        border: 3px solid #444; 
+        box-shadow: 0px 0px 0px 1.25px #777;
+    }
+    
+    .rem-bullet__container .rem-bullet__icon.rem-bullet--all-children-visible { 
+        background-color: transparent;
+        border: none; 
+    }
+
+    .rem-bullet[style*="border-width: 3px;"] {
+        border-width: 3.5px!important;
+    }
+
+    .rem-bullet__container .rem-bullet--all-children-visible {
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 100%;
+        background-color: #b58900;
+        display: inline-block;
+        border: none; 
+        box-shadow: none;
+    }
+
+    .rem-container--not-in-article .rem-bullet__container:hover .rem-bullet--all-children-visible,
+    .rem-container--not-in-article .rem-bullet__container:hover .rem-bullet, .rem-container--not-in-article .rem-bullet__container:hover .rem-bullet--in-list {
+        border: 3.5px solid #666;
+    } 

@@ -1,3 +1,5 @@
 # Solarized-Dark-theme-for-Remnote
 
-Don't use this theme yet. I have just started working on it for my personal use. I am not a programmer. So it will take some time for this to become actually useful for others. There is so much of tweaking to be done. 
+https://www.remnote.io/a/solarized-dark-theme-for-remnote-arsheth/605e4f378744ce0045019762
+
+Import this document into your knowledge base to use this theme. Use this link till i update in github which may take some time.
